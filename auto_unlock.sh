@@ -31,9 +31,9 @@ while true; do
     else
         # বড় লাল ডট ব্লিংক করবে সেন্টারে
         echo -ne "${PAD}${RED}$BIG_DOT USB Scanning...${NC}\r"
-        sleep 0.5
+        sleep 0.1
         echo -ne "${PAD}  USB Scanning...${NC}\r" 
-        sleep 0.5
+        sleep 0.1
     fi
 done
 
@@ -61,7 +61,7 @@ while read -r pin; do
     
     # প্রসেসিং ডট
     echo -ne "${PAD}${YELLOW}$BIG_DOT Waiting for Device...${NC}\r"
-    sleep 5
+    sleep 1
 done < "$PIN_FILE"
 
 echo -e "\n${GREEN}${PAD}=======================================${NC}"
