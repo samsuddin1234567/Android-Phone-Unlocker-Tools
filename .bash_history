@@ -242,3 +242,6 @@ chmod +x proxy_shamsuddin.sh
 ./proxy_shamsuddin.sh
 clear
 exit
+ls
+clear
+exit
